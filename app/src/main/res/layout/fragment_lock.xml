@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.valentineapp.lovetogether.utils.StoninTextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="09:00"
+        android:textColor="@android:color/white"
+        android:textSize="60sp" />
+
+    <com.valentineapp.lovetogether.utils.StoninTextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Example"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerInParent="true">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/male_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:src="@mipmap/ic_launcher"
+            app:siBorderColor="@android:color/white"
+            app:siBorderWidth="2dp" />
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/female_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/ic_launcher"
+            app:siBorderColor="@android:color/white"
+            app:siBorderWidth="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/like" />
+
+        <com.valentineapp.lovetogether.utils.VoyageTextView
+            android:id="@+id/days_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/male_img"
+            android:layout_below="@+id/female_img"
+            android:text="110 Days"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/slide_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:text="Slide to unlock"
+        android:textColor="#444"
+        android:textSize="28sp" />
+
+</RelativeLayout>
